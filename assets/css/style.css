@@ -1307,3 +1307,26 @@ h6 {
   font-size: 13px;
   color: #012970;
 }
+@font-face {
+  font-family: 'Circular Std Medium';
+  src: url('../fonts/CircularStd-Medium.eot');
+  src: url('../fonts/CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/CircularStd-Medium.woff2') format('woff2'),
+      url('../fonts/CircularStd-Medium.woff') format('woff'),
+      url('../fonts/CircularStd-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../fonts/CircularStd-Black.eot');
+  src: url('../fonts/CircularStd-Black.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/CircularStd-Black.woff2') format('woff2'),
+      url('../fonts/CircularStd-Black.woff') format('woff'),
+      url('../fonts/CircularStd-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
