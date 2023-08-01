@@ -29,6 +29,18 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Cairo Semibold';
+  src: url('../fonts/Cairo-SemiBold.eot');
+  src: url('../fonts/Cairo-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Cairo-SemiBold.woff2') format('woff2'),
+      url('../fonts/Cairo-SemiBold.woff') format('woff'),
+      url('../fonts/Cairo-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background: #f6f9ff;
