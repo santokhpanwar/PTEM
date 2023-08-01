@@ -338,6 +338,9 @@ h6 {
 .groups .group-list:not(:last-child){
   margin-bottom: 10px;
 }
+.groups .group-list span{
+  font-weight: 600;
+}
 .dashboard .groups .profile-img img{
   width: 97px;
 }
@@ -346,9 +349,16 @@ h6 {
     width: 25%;
   }
 }
-/* .dashboard .groups .profile-name{
-  font-size: 12px;
-} */
+.dashboard .groups .profile-name span{
+  font-size: 16px;
+  font-weight: 600;
+}
+.active i:first-child {
+  background: #ff675b;
+  padding: 12px 15px;
+  border-radius: 0 50% 50% 0;
+  color: white !important;
+}
 /* groups view end  */
 
 /* Alerts */
@@ -791,7 +801,7 @@ h6 {
   color: #4154f1;
   transition: 0.3;
   background: #f6f9ff;
-  padding: 10px 15px;
+  padding: 10px 15px 10px 0;
   border-radius: 4px;
 }
 
