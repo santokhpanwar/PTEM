@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>PTFM</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+   <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/PT-Final-Exam-Logo.png" alt="">
+        <!-- <span class="d-none d-lg-block">PT Final Exam</span> -->
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item">
+
+          <a class="nav-link nav-icon">
+            <i class="bi bi-list"></i>
+          </a>
+
+        </li>
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon">
+            <i class="bi bi-grid"></i>
+          </a>     
+
+        </li>
+
+        <li class="nav-item add-new-btn">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#">
+            <i class="bi bi-people"></i>
+            <span class="d-none d-md-block ps-2">New Organization</span>
+          </a> 
+
+          
+        </li> 
+
+      </ul>
+    </nav> 
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar ps-0 d-flex flex-column justify-content-between ">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed active" data-bs-target="#dashboard-nav" data-bs-toggle="collapse" href="index.html">
+          <i class="bi bi-house-fill"></i><span>Dashboard</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="dashboard-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="index.html">
+              <i class="bi bi-circle"></i><span>Dashboard</span>
+            </a>
+          </li>         
+                  
+        </ul>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#notification-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-app-indicator"></i><span>Notification</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="notification-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Sub menu</span>
+            </a>
+          </li>          
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Sub menu</span>
+            </a>
+          </li>          
+        </ul>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#student-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-person-fill"></i> Student</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="student-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Sub menu</span>
+            </a>
+          </li>          
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Sub menu</span>
+            </a>
+          </li>          
+        </ul>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#groups-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-people-fill"></i><span>Groups</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="groups-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Sub menu</span>
+            </a>
+          </li>          
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Sub menu</span>
+            </a>
+          </li>          
+        </ul>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#organization-nav" data-bs-toggle="collapse" href="organization.html">
+          <i class="bi bi-bank"></i><span>Organization</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="organization-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="organization.html">
+              <i class="bi bi-circle"></i><span>Organization</span>
+            </a>
+          </li>          
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Sub menu</span>
+            </a>
+          </li>          
+        </ul>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#membership-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-gem"></i> <span> Membership Plans</span> <i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="membership-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="membership-view.html">
+              <i class="bi bi-circle"></i><span>Membership</span>
+            </a>
+          </li>          
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Sub menu</span>
+            </a>
+          </li>          
+        </ul>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#exams-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>Exams</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="exams-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="examlist.html">
+              <i class="bi bi-circle"></i><span>Exam List</span>
+            </a>
+          </li>          
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Sub menu</span>
+            </a>
+          </li>          
+        </ul>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#statistics-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-graph-up-arrow"></i> <span>Statistics</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="statistics-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Sub menu</span>
+            </a>
+          </li>          
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Sub menu</span>
+            </a>
+          </li>          
+        </ul>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#emails-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-send-fill"></i> <span>Emails</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="emails-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Sub menu</span>
+            </a>
+          </li>          
+          <li>
+            <a href="login.html">
+              <i class="bi bi-circle"></i><span>Sub menu</span>
+            </a>
+          </li>          
+        </ul>
+      </li> 
+      
+    </ul>
+    <div class="user-profile">
+      <a class="nav-link nav-profile d-flex align-items-center  pe-0 ms-5" href="#" data-bs-toggle="dropdown">
+        <img width="33px" src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+        <span class="d-none d-md-block text-dark  px-4">K. Anderson</span> <i class="bi bi-three-dots"></i>
+      </a>
+    </div>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+   
+    <section class="section dashboard">
+      
+        <table id="tablelist" class="table table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th class="p-3 bg-white fw-normal text-center">Exam Name</th>
+                    <th class="p-3 bg-white fw-normal text-center">Category</th>
+                    <th class="p-3 bg-white fw-normal text-center">Attempts</th>
+                    <th class="p-3 bg-white fw-normal text-center">Passing %</th>
+                    <th class="p-3 bg-white fw-normal text-center">Section</th>
+                    <th class="p-3 bg-white fw-normal text-center">Questions</th>
+                    <th class="p-3 bg-white fw-normal text-center">Status</th>
+                    <th class="p-3 bg-white fw-normal text-center">Option</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="py-4 bg-white border-end fw-bold"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><span class="exam-number bg-number ms-5 p-2 rounded text-primary fw-bold">01</span> <span class="ms-2">Exam name goes here</span> </td>
+                    <td class="py-4 text-center bg-white border-end"><span class="exam-number bg-number p-2 rounded text-primary fw-bold">PT</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded p-2">3,890</span></td>
+                    <td class="py-4 text-center bg-white border-end"><i class="bi bi-arrow-up-right text-success bg-activelist py-1 px-2 rounded-circle"></i><span class="text-success fw-bold p-2">16,24 %</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">4</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">47</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="text-success fw-bold bg-activelist py-2 px-4 rounded">ACTIVE</span></td>
+                    <td class="py-4 text-center bg-white"><i class="bi bi-three-dots-vertical"></i></td>
+                </tr>
+                <tr>
+                    <td class="py-4 bg-white border-end fw-bold"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><span class="exam-number bg-number ms-5 p-2 rounded text-primary fw-bold">01</span> <span class="ms-2">Exam name goes here</span> </td>
+                    <td class="py-4 text-center bg-white border-end"><span class="exam-number bg-number p-2 rounded text-primary fw-bold">PT</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded p-2">3,890</span></td>
+                    <td class="py-4 text-center bg-white border-end"><i class="bi bi-arrow-up-right text-success bg-activelist py-1 px-2 rounded-circle"></i><span class="text-success fw-bold p-2">16,24 %</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">4</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">47</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="text-success fw-bold bg-activelist py-2 px-4 rounded">ACTIVE</span></td>
+                    <td class="py-4 text-center bg-white"><i class="bi bi-three-dots-vertical"></i></td>
+                </tr>
+                <tr>
+                    <td class="py-4 bg-white border-end fw-bold"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><span class="exam-number bg-number ms-5 p-2 rounded text-primary fw-bold">01</span> <span class="ms-2">Exam name goes here</span> </td>
+                    <td class="py-4 text-center bg-white border-end"><span class="exam-number bg-number p-2 rounded text-primary fw-bold">PT</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded p-2">3,890</span></td>
+                    <td class="py-4 text-center bg-white border-end"><i class="bi bi-arrow-up-right text-success bg-activelist py-1 px-2 rounded-circle"></i><span class="text-success fw-bold p-2">16,24 %</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">4</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">47</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="text-success fw-bold bg-activelist py-2 px-4 rounded">ACTIVE</span></td>
+                    <td class="py-4 text-center bg-white"><i class="bi bi-three-dots-vertical"></i></td>
+                </tr>
+                <tr>
+                    <td class="py-4 bg-white border-end fw-bold"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><span class="exam-number bg-number ms-5 p-2 rounded text-primary fw-bold">01</span> <span class="ms-2">Exam name goes here</span> </td>
+                    <td class="py-4 text-center bg-white border-end"><span class="exam-number bg-number p-2 rounded text-primary fw-bold">PT</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded p-2">3,890</span></td>
+                    <td class="py-4 text-center bg-white border-end"><i class="bi bi-arrow-up-right text-success bg-activelist py-1 px-2 rounded-circle"></i><span class="text-success fw-bold p-2">16,24 %</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">4</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">47</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="text-success fw-bold bg-activelist py-2 px-4 rounded">ACTIVE</span></td>
+                    <td class="py-4 text-center bg-white"><i class="bi bi-three-dots-vertical"></i></td>
+                </tr>
+                <tr>
+                    <td class="py-4 bg-white border-end fw-bold"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><span class="exam-number bg-number ms-5 p-2 rounded text-primary fw-bold">01</span> <span class="ms-2">Exam name goes here</span> </td>
+                    <td class="py-4 text-center bg-white border-end"><span class="exam-number bg-number p-2 rounded text-primary fw-bold">PT</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded p-2">3,890</span></td>
+                    <td class="py-4 text-center bg-white border-end"><i class="bi bi-arrow-up-right text-success bg-activelist py-1 px-2 rounded-circle"></i><span class="text-success fw-bold p-2">16,24 %</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">4</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">47</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="text-success fw-bold bg-activelist py-2 px-4 rounded">ACTIVE</span></td>
+                    <td class="py-4 text-center bg-white"><i class="bi bi-three-dots-vertical"></i></td>
+                </tr>
+                <tr>
+                    <td class="py-4 bg-white border-end fw-bold"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><span class="exam-number bg-number ms-5 p-2 rounded text-primary fw-bold">01</span> <span class="ms-2">Exam name goes here</span> </td>
+                    <td class="py-4 text-center bg-white border-end"><span class="exam-number bg-number p-2 rounded text-primary fw-bold">PT</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded p-2">3,890</span></td>
+                    <td class="py-4 text-center bg-white border-end"><i class="bi bi-arrow-up-right text-success bg-activelist py-1 px-2 rounded-circle"></i><span class="text-success fw-bold p-2">16,24 %</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">4</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">47</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="text-success fw-bold bg-activelist py-2 px-4 rounded">ACTIVE</span></td>
+                    <td class="py-4 text-center bg-white"><i class="bi bi-three-dots-vertical"></i></td>
+                </tr>
+                <tr>
+                    <td class="py-4 bg-white border-end fw-bold"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><span class="exam-number bg-number ms-5 p-2 rounded text-primary fw-bold">01</span> <span class="ms-2">Exam name goes here</span> </td>
+                    <td class="py-4 text-center bg-white border-end"><span class="exam-number bg-number p-2 rounded text-primary fw-bold">PT</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded p-2">3,890</span></td>
+                    <td class="py-4 text-center bg-white border-end"><i class="bi bi-arrow-up-right text-success bg-activelist py-1 px-2 rounded-circle"></i><span class="text-success fw-bold p-2">16,24 %</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">4</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">47</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="text-success fw-bold bg-activelist py-2 px-4 rounded">ACTIVE</span></td>
+                    <td class="py-4 text-center bg-white"><i class="bi bi-three-dots-vertical"></i></td>
+                </tr>
+                <tr>
+                    <td class="py-4 bg-white border-end fw-bold"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><span class="exam-number bg-number ms-5 p-2 rounded text-primary fw-bold">01</span> <span class="ms-2">Exam name goes here</span> </td>
+                    <td class="py-4 text-center bg-white border-end"><span class="exam-number bg-number p-2 rounded text-primary fw-bold">PT</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded p-2">3,890</span></td>
+                    <td class="py-4 text-center bg-white border-end"><i class="bi bi-arrow-up-right text-success bg-activelist py-1 px-2 rounded-circle"></i><span class="text-success fw-bold p-2">16,24 %</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">4</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">47</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="text-success fw-bold bg-activelist py-2 px-4 rounded">ACTIVE</span></td>
+                    <td class="py-4 text-center bg-white"><i class="bi bi-three-dots-vertical"></i></td>
+                </tr>
+                <tr>
+                    <td class="py-4 bg-white border-end fw-bold"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><span class="exam-number bg-number ms-5 p-2 rounded text-primary fw-bold">01</span> <span class="ms-2">Exam name goes here</span> </td>
+                    <td class="py-4 text-center bg-white border-end"><span class="exam-number bg-number p-2 rounded text-primary fw-bold">PT</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded p-2">3,890</span></td>
+                    <td class="py-4 text-center bg-white border-end"><i class="bi bi-arrow-up-right text-success bg-activelist py-1 px-2 rounded-circle"></i><span class="text-success fw-bold p-2">16,24 %</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">4</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">47</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="text-success fw-bold bg-activelist py-2 px-4 rounded">ACTIVE</span></td>
+                    <td class="py-4 text-center bg-white"><i class="bi bi-three-dots-vertical"></i></td>
+                </tr>
+                <tr>
+                    <td class="py-4 bg-white border-end fw-bold"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><span class="exam-number bg-number ms-5 p-2 rounded text-primary fw-bold">01</span> <span class="ms-2">Exam name goes here</span> </td>
+                    <td class="py-4 text-center bg-white border-end"><span class="exam-number bg-number p-2 rounded text-primary fw-bold">PT</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded p-2">3,890</span></td>
+                    <td class="py-4 text-center bg-white border-end"><i class="bi bi-arrow-up-right text-success bg-activelist py-1 px-2 rounded-circle"></i><span class="text-success fw-bold p-2">16,24 %</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">4</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">47</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="text-success fw-bold bg-activelist py-2 px-4 rounded">ACTIVE</span></td>
+                    <td class="py-4 text-center bg-white"><i class="bi bi-three-dots-vertical"></i></td>
+                </tr>
+                <tr>
+                    <td class="py-4 bg-white border-end fw-bold"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><span class="exam-number bg-number ms-5 p-2 rounded text-primary fw-bold">01</span> <span class="ms-2">Exam name goes here</span> </td>
+                    <td class="py-4 text-center bg-white border-end"><span class="exam-number bg-number p-2 rounded text-primary fw-bold">PT</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded p-2">3,890</span></td>
+                    <td class="py-4 text-center bg-white border-end"><i class="bi bi-arrow-up-right text-success bg-activelist py-1 px-2 rounded-circle"></i><span class="text-success fw-bold p-2">16,24 %</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">4</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">47</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="text-success fw-bold bg-activelist py-2 px-4 rounded">ACTIVE</span></td>
+                    <td class="py-4 text-center bg-white"><i class="bi bi-three-dots-vertical"></i></td>
+                </tr>
+                <tr>
+                    <td class="py-4 bg-white border-end fw-bold"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><span class="exam-number bg-number ms-5 p-2 rounded text-primary fw-bold">01</span> <span class="ms-2">Exam name goes here</span> </td>
+                    <td class="py-4 text-center bg-white border-end"><span class="exam-number bg-number p-2 rounded text-primary fw-bold">PT</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded p-2">3,890</span></td>
+                    <td class="py-4 text-center bg-white border-end"><i class="bi bi-arrow-up-right text-success bg-activelist py-1 px-2 rounded-circle"></i><span class="text-success fw-bold p-2">16,24 %</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">4</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">47</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="text-success fw-bold bg-activelist py-2 px-4 rounded">ACTIVE</span></td>
+                    <td class="py-4 text-center bg-white"><i class="bi bi-three-dots-vertical"></i></td>
+                </tr>
+                <tr>
+                    <td class="py-4 bg-white border-end fw-bold"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><span class="exam-number bg-number ms-5 p-2 rounded text-primary fw-bold">01</span> <span class="ms-2">Exam name goes here</span> </td>
+                    <td class="py-4 text-center bg-white border-end"><span class="exam-number bg-number p-2 rounded text-primary fw-bold">PT</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded p-2">3,890</span></td>
+                    <td class="py-4 text-center bg-white border-end"><i class="bi bi-arrow-up-right text-success bg-activelist py-1 px-2 rounded-circle"></i><span class="text-success fw-bold p-2">16,24 %</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">4</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">47</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="text-success fw-bold bg-activelist py-2 px-4 rounded">ACTIVE</span></td>
+                    <td class="py-4 text-center bg-white"><i class="bi bi-three-dots-vertical"></i></td>
+                </tr>
+                <tr>
+                    <td class="py-4 bg-white border-end fw-bold"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><span class="exam-number bg-number ms-5 p-2 rounded text-primary fw-bold">01</span> <span class="ms-2">Exam name goes here</span> </td>
+                    <td class="py-4 text-center bg-white border-end"><span class="exam-number bg-number p-2 rounded text-primary fw-bold">PT</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded p-2">3,890</span></td>
+                    <td class="py-4 text-center bg-white border-end"><i class="bi bi-arrow-up-right text-success bg-activelist py-1 px-2 rounded-circle"></i><span class="text-success fw-bold p-2">16,24 %</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">4</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">47</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="text-success fw-bold bg-activelist py-2 px-4 rounded">ACTIVE</span></td>
+                    <td class="py-4 text-center bg-white"><i class="bi bi-three-dots-vertical"></i></td>
+                </tr>
+                <tr>
+                    <td class="py-4 bg-white border-end fw-bold"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"><span class="exam-number bg-number ms-5 p-2 rounded text-primary fw-bold">01</span> <span class="ms-2">Exam name goes here</span> </td>
+                    <td class="py-4 text-center bg-white border-end"><span class="exam-number bg-number p-2 rounded text-primary fw-bold">PT</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded p-2">3,890</span></td>
+                    <td class="py-4 text-center bg-white border-end"><i class="bi bi-arrow-up-right text-success bg-activelist py-1 px-2 rounded-circle"></i><span class="text-success fw-bold p-2">16,24 %</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">4</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="border rounded py-2 px-3">47</span></td>
+                    <td class="py-4 text-center bg-white border-end"><span class="text-success fw-bold bg-activelist py-2 px-4 rounded">ACTIVE</span></td>
+                    <td class="py-4 text-center bg-white"><i class="bi bi-three-dots-vertical"></i></td>
+                </tr>
+           
+            </tbody>
+            
+        </table>
+       
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+ new DataTable('#tablelist');
+  </script>
+</body>
+
+</html>

@@ -758,6 +758,7 @@ h6 {
   #main,
   #footer {
     margin-left: 300px;
+    background: #f8f8f8;
   }
 }
 
@@ -1357,4 +1358,13 @@ h6 {
   font-size: 13px;
   color: #012970;
 }
-
+ /* examlist css */
+.bg-number {
+  background-color: #C4DFFF;
+}
+.bg-activelist {
+  background-color: #00a16a57;
+}
+table.dataTable.table-striped>tbody>tr.odd>* {
+  box-shadow: none;
+}
